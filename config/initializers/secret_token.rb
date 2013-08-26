@@ -24,4 +24,4 @@ def secure_token
   end
 end
 
-FirstApp::Application.config.secret_key_base = secure_token
+Cetifarma::Application.config.secret_key_base = secure_token

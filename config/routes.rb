@@ -1,4 +1,6 @@
-FirstApp::Application.routes.draw do
+Cetifarma::Application.routes.draw do
+  get "static_pages/home"
+  get "static_pages/codigo"
   resources :adherentes
 
   resources :users
