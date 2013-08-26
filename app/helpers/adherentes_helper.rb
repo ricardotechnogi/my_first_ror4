@@ -1,0 +1,2 @@
+module AdherentesHelper
+end
