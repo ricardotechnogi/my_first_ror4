@@ -1,8 +1,7 @@
 Cetifarma::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/codigo"
+  root  'static_pages#home'
+  match '/codigo',    to: 'static_pages#codigo',    via: 'get'
   resources :adherentes
-
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.

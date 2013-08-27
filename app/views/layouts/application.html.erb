@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cetifarma | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag   "application", media: "all"%>
+  
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-spy="scroll">
 
-<%= yield %>
+	<%= render 'layouts/header' %>
 
+    <div id="wrap">
+      <div class="container">
+      	<% flash.each do |key, value| %>
+        	<div class="alert alert-<%= key %>"><%= value %></div>
+      	<% end %>
+        <div class="row">
+          	<%= yield %>
+          </div>	
+		</div>
+	</div>
+	<%= render 'layouts/footer' %>
+
+     <%= javascript_include_tag "application"%> 
+   
 </body>
+
 </html>

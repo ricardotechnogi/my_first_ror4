@@ -1,0 +1,192 @@
+html,body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+fieldset{
+  margin-bottom: 20px;
+}
+
+div.input-group{
+  margin-top: 15px; 
+}
+
+body .modal {
+    /* new custom width */
+    
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto 30px;
+  /* Pad bottom by footer height */
+  padding-top:80px;
+}
+
+
+
+/* Set the fixed height of the footer here */
+#footer {
+  position:fixed;
+  top:96%;
+  height: 30px;
+  width: 100%;
+  background-color: #eee;
+  color:rgb(19,27,104);
+}
+
+.navbar{
+  color: #DE6600;
+  background-color: #eee;
+}
+
+
+.navbar a{
+  color:rgb(19,27,104);
+}
+
+.navbar ul li a{
+  color:rgb(19,27,104);
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 400px) {
+  #footer {
+    position:relative;
+  }
+}
+
+
+
+code {
+  font-size: 80%;
+}
+
+
+
+.sidebar-nav-fixed {
+  position: fixed;
+  top: 12%;
+  left:10px;
+  width:20%;
+}
+
+.sidebar-videos {
+  position: fixed;
+  top: 50%;
+  left:100px;
+}
+
+.adherentes-well{
+  max-height:250px;
+  overflow: auto;
+}
+
+
+.bs-sidebar.affix {
+  position: static;
+}
+
+
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+}
+
+* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .active .nav {
+  display: block; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+.bs-sidebar .nav .nav .nav > li > a {
+  padding-left: 45px;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* Show the docs nav */
+  .bs-sidebar {
+    display: block;
+    width:100%;
+  }
+  /* Show the hidden subnavs when space allows it */
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+
+
+  .bs-navbar-top-example .navbar-fixed-top,
+  .bs-navbar-bottom-example .navbar-fixed-bottom {
+    position: absolute;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile-first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile-first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 270px;
+  }
+
+}

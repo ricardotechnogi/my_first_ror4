@@ -1,7 +1,28 @@
 <% provide(:title, 'Home') %>
-<h1>Cetifarma</h1>
-<p>
-  This is the home page for the
-  <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application.
-</p>
+
+<div class="col-md-3">
+	<%= render 'static_pages/home/homesidebar' %>
+</div>
+<div class="col-md-9">
+	<%= render 'static_pages/home/carouselbanner' %>
+	<div class="row">
+		          
+		<div class="col-md-6">
+			<%= render 'static_pages/home/servicios' %>
+		</div>
+		<div class="col-md-6">
+			<%= render 'static_pages/home/documentos' %>
+		</div>
+	</div>
+	<div class="row">              
+		<div class="col-md-12">
+			<%= render 'static_pages/home/adherentes' %>
+		</div>
+	</div>
+	<div class="row">
+	              
+	  	<div class="col-md-12">
+			<%= render 'static_pages/home/consejoeticatransparencia' %>
+		</div>
+	</div>
+</div>
