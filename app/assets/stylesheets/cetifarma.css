@@ -102,7 +102,7 @@ code {
   border-radius: 5px;
 }
 
-* All levels of nav */
+/* All levels of nav */
 .bs-sidebar .nav > li > a {
   display: block;
   color: #716b7a;
